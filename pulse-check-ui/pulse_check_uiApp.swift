@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct pulse_check_uiApp: App {
+    @StateObject var sessionManager = SessionManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if sessionManager.isAuthenticated {
+                ContentView().environmentObject(sessionManager)
+            } else {
+                LoginView().environmentObject(sessionManager)
+            }
         }
     }
 }

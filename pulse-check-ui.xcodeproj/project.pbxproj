@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		854D15F92DDB95EC00C832A6 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 854D15F82DDB95EC00C832A6 /* Auth0 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		854D15D42DDB8E7400C832A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -30,6 +34,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		85309B352DDBC10D00B1FA8B /* config */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = config;
+			sourceTree = "<group>";
+		};
 		854D15C82DDB8E7200C832A6 /* pulse-check-ui */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "pulse-check-ui";
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854D15F92DDB95EC00C832A6 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +85,7 @@
 		854D15BD2DDB8E7200C832A6 = {
 			isa = PBXGroup;
 			children = (
+				85309B352DDBC10D00B1FA8B /* config */,
 				854D15C82DDB8E7200C832A6 /* pulse-check-ui */,
 				854D15D62DDB8E7400C832A6 /* pulse-check-uiTests */,
 				854D15E02DDB8E7400C832A6 /* pulse-check-uiUITests */,
@@ -108,10 +119,12 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				85309B352DDBC10D00B1FA8B /* config */,
 				854D15C82DDB8E7200C832A6 /* pulse-check-ui */,
 			);
 			name = "pulse-check-ui";
 			packageProductDependencies = (
+				854D15F82DDB95EC00C832A6 /* Auth0 */,
 			);
 			productName = "pulse-check-ui";
 			productReference = 854D15C62DDB8E7200C832A6 /* pulse-check-ui.app */;
@@ -195,6 +208,9 @@
 			);
 			mainGroup = 854D15BD2DDB8E7200C832A6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				854D15F02DDB912200C832A6 /* XCRemoteSwiftPackageReference "Auth0" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 854D15C72DDB8E7200C832A6 /* Products */;
 			projectDirPath = "";
@@ -558,6 +574,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		854D15F02DDB912200C832A6 /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		854D15F82DDB95EC00C832A6 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 854D15F02DDB912200C832A6 /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 854D15BE2DDB8E7200C832A6 /* Project object */;
 }

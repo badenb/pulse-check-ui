@@ -1,3 +1,82 @@
+# Xcode build and workspace files
+build/
+DerivedData/
+*.xcworkspace
+!default.xcworkspace
+
+# Xcode specific
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+
+# SwiftPM
+.swiftpm/
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Accio
+Dependencies/
+.accio/
+
+# Archives
+*.xcarchive
+
+# App Store
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Certificates & profiles
+*.mobileprovision
+*.cer
+*.crt
+*.p12
+
+# Playground files
+timeline.xctimeline
+playground.xcworkspace
+
+# Logs and temporary
+*.log
+*.tmp
+*.swp
+*.lock
+
+# Secrets
+config/Secrets.xcconfig
+*.xcconfig
+*.env
+*.key
+*.pem
+
+# IDEs
+.idea/
+.vscode/
+
+# SwiftLint
+.swiftlint.yml
+
+# SPM checkouts
+checkouts/
+
+# Firebase
+GoogleService-Info.plist
+
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
