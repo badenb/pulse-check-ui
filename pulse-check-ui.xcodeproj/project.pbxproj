@@ -33,6 +33,16 @@
 		854D15DD2DDB8E7400C832A6 /* pulse-check-uiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pulse-check-uiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		85309B6B2DDF4B4600B1FA8B /* Exceptions for "pulse-check-ui" folder in "pulse-check-ui" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 854D15C52DDB8E7200C832A6 /* pulse-check-ui */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		85309B352DDBC10D00B1FA8B /* config */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -41,6 +51,9 @@
 		};
 		854D15C82DDB8E7200C832A6 /* pulse-check-ui */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				85309B6B2DDF4B4600B1FA8B /* Exceptions for "pulse-check-ui" folder in "pulse-check-ui" target */,
+			);
 			path = "pulse-check-ui";
 			sourceTree = "<group>";
 		};
@@ -287,6 +300,8 @@
 /* Begin XCBuildConfiguration section */
 		854D15E52DDB8E7400C832A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 85309B352DDBC10D00B1FA8B /* config */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -351,6 +366,8 @@
 		};
 		854D15E62DDB8E7400C832A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 85309B352DDBC10D00B1FA8B /* config */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -408,6 +425,8 @@
 		};
 		854D15E82DDB8E7400C832A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 85309B352DDBC10D00B1FA8B /* config */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -416,6 +435,7 @@
 				DEVELOPMENT_TEAM = MXWZUUW9F2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pulse-check-ui/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,6 +456,8 @@
 		};
 		854D15E92DDB8E7400C832A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 85309B352DDBC10D00B1FA8B /* config */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +466,7 @@
 				DEVELOPMENT_TEAM = MXWZUUW9F2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pulse-check-ui/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

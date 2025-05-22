@@ -3,8 +3,18 @@ import Foundation
 class SessionManager: ObservableObject {
     @Published var isAuthenticated = false
     
+    private let authManager: AuthManager
+    
+    init(isAuthenticated: Bool = false) {
+        guard let authManager = AuthManager.shared else {
+            fatalError("❌ Failed to initialize AuthManager")
+        }
+        
+        self.authManager = authManager
+    }
+    
     func login(email: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
-        AuthManager.shared.login(email: email, password: password) { result in
+        authManager.login(email: email, password: password) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success:
